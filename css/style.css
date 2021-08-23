@@ -1,18 +1,51 @@
-/* Definition runder Button */
+/* Pages */
+.page {
+  padding: 50px 40px;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+/* Hintergrungfarben */
+.grey--bg {
+  background-color: rgba(241, 241, 241, 1.0);
+}
+
+/* Buttons */
+/* Runder Button */
 .round-button {
-    display:block;
-    width:40px;
-    height:40px;
-    line-height:0%;
-    border: 2px solid #f5f5f5;
-    border-radius: 50%;
-    color:#f5f5f5;
-    text-align:center;
-    text-decoration:none;
-    background: #7ab331;
-    font-size:20px;
-    font-weight:bold;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+  height:40px;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  color:#f5f5f5;
+  text-align:center;
+  text-decoration:none;
+  background: #7ab331;
+  font-size:20px;
+  font-weight:bold;
+}
+/* Animations */
+.animated-arrow{  animation-name: animation-arrow;  animation-duration: 4s;  animation-iteration-count: infinite;  animation-delay: 1s;}
+@keyframes animation-arrow {
+    0%  {transform: translateY(0px)}
+    10% {transform: translateY(-5px)}
+    20%  {transform: translateY(0px)}
+    30% {transform: translateY(-5px)}
+    40%  {transform: translateY(0px)}
+    50% {transform: translateY(-5px)}
+    60% {transform: translateY(0px)}
+    70% {transform: translateY(-5px)}
+    80% {transform: translateY(0px)}
+    90% {transform: translateY(0px)}
+    100% {transform: translateY(0px)}
   }
+
+
+/* Definition runder Button */
+
   
   /* Pfeilsymbol*/
   .arrow {
@@ -51,5 +84,5 @@
   }
 
   .greey{
-  background-color:#f1f1f1;
+    background-color:#f1f1f1;
   }
