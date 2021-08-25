@@ -5,12 +5,12 @@
   height: auto;
   min-height: 100vh;
 }
-/* Hintergrungfarben */
+/* Hintergrundfarben */
 .grey--bg {
   background-color: rgba(241, 241, 241, 1.0);
 }
 
-
+/* Schatten oben deaktiviert */
 .shadow-top-0{
  /* box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important; */
  box-shadow: 0 40px 20px -2px gray; 
@@ -25,8 +25,8 @@
 }
 
 .box--min-height {
-  /* min-height: 550px; */
-  grid-template-rows: minmax(550px, auto) 1fr;
+  min-height: 550px; 
+
 }
 
 .item-d {
