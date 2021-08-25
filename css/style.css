@@ -19,7 +19,49 @@
 }
 
 .box--min-height {
-  min-height: 550px;
+  min-height: 0px;
+}
+
+@media (min-width: 768px) {	
+  .box--min-height {
+    min-height: 850px;
+  }
+}
+@media (min-width: 992px) {	
+  .box--min-height {
+    min-height: 750px;
+  }
+}
+@media (min-width: 1200px) {	
+  .box--min-height {
+    min-height: 650;
+  }
+}
+@media (min-width: 1400px) {	
+  .box--min-height {
+    min-height: 550;
+  }
+}
+
+.box--min-height-image {
+  min-height: 0px;
+}
+
+@media (min-width: 768px) {	
+  .box--min-height-image {
+    min-height: 200px;
+  }
+}
+@media (min-width: 992px) {	
+  .box--min-height-image {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {	
+  .box--min-height-image {
+    min-height: 390px;
+  }
 }
 /* Buttons */
 /* Runder Button */
@@ -96,4 +138,14 @@
 
   .greey{
     background-color:#f1f1f1;
+  }
+
+  .hide-mobile{
+    display: none;
+  } 
+
+  @media (min-width: 992px) {	
+    .hide-mobile{
+      display: flex;
+    } 
   }
