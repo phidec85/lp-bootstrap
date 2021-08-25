@@ -10,6 +10,12 @@
   background-color: rgba(241, 241, 241, 1.0);
 }
 
+
+.shadow-top-0{
+ /* box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important; */
+ box-shadow: 0 40px 20px -2px gray; 
+}
+
 /* Boxes */
 .box--white {
   background-color: rgba(255, 255, 255, 1.0);
@@ -19,8 +25,16 @@
 }
 
 .box--min-height {
-  min-height: 550px;
+  /* min-height: 550px; */
+  grid-template-rows: minmax(550px, auto) 1fr;
 }
+
+.item-d {
+  grid-area: 1 / col4-start / last-line / 6;
+}
+
+
+
 /* Buttons */
 /* Runder Button */
 .round-button {
