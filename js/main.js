@@ -17,4 +17,12 @@ $(document).ready(function(){
         });
       }
     });
+
+    if($('.box--min-height').length) {
+      var minHeighBox = 0;
+      $('.box--min-height').each(function(){
+          var $element = $(this);
+          console.log(element.height());
+      });
+    }
   });
